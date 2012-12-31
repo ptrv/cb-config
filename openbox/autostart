@@ -84,6 +84,6 @@ synclient TouchpadOff=1 &
 
 /home/peter/.dropbox-dist/dropbox &
 
-emacs-snapshot-lucid --daemon &
+emacs --daemon &
 
 cameramonitor &
