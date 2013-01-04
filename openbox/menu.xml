@@ -30,7 +30,7 @@
 		</item>
 		<item label="Text Editor">
 			<action name="Execute">
-				<command>emacsclient -c</command>
+				<command>emacs</command>
 			</action>
 		</item>
 		<item label="Media Player">
