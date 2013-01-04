@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Camera Monitor
+Comment=Camera Monitor
+Icon=/usr/share/cameramonitor/cameramonitor.png
+Exec=/usr/bin/cameramonitor
+Terminal=false
+Type=Application
+Categories=
