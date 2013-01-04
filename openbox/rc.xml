@@ -391,6 +391,15 @@
         <command>emacsclient -c</command>
       </action>
     </keybind>
+    <keybind key="S-W-e">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Editor</name>
+        </startupnotify>
+        <command>emacs</command>
+      </action>
+    </keybind>
     <keybind key="W-m">
       <action name="Execute">
         <startupnotify>
@@ -463,6 +472,27 @@
     <keybind key="W-A-Right">
       <action name="Execute">
         <command>cb-aerosnap --right</command>
+      </action>
+    </keybind>
+    <!-- Media keys for clementine -->
+    <keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>media_keys_pipe clementine -t</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+      <action name="Execute">
+        <command>media_keys_pipe clementine -r</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+      <action name="Execute">
+        <command>media_keys_pipe clementine -f</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioStop">
+      <action name="Execute">
+        <command>media_keys_pipe clementine -s</command>
       </action>
     </keybind>
   </keyboard>
