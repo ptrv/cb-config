@@ -81,9 +81,3 @@ cb-cowpowers &
 
 rfkill block bluetooth &
 synclient TouchpadOff=1 &
-
-/home/peter/.dropbox-dist/dropbox &
-
-emacs --daemon &
-
-cameramonitor &
