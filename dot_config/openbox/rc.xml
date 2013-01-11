@@ -406,7 +406,7 @@
           <enabled>true</enabled>
           <name>Mediaplayer</name>
         </startupnotify>
-        <command>gnome-mplayer</command>
+        <command>vlc</command>
       </action>
     </keybind>
     <keybind key="W-h">
