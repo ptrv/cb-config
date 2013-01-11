@@ -67,8 +67,12 @@ ${downspeedgraph wlan0}
 DLS:${downspeed wlan0} kb/s $alignr total: ${totaldown wlan0}
 ${upspeedgraph wlan0}
 ULS:${upspeed wlan0} kb/s $alignr total: ${totalup wlan0}
-
+#
 #~ ${font sans-serif:bold:size=8}WEATHER ${hr 2}
 #~ ${if_existing /proc/net/route wlan0}
 #~ ${voffset -8}${alignr 56}${font ConkyWeather:style=Bold:size=40}${execi 600 conkyForecast --location=FIXX0020 --datatype=WF}${font}
 #~ ${voffset -52}${font Weather:size=40}y${font}   ${voffset -38}${font Trebuchet MS:size=26}${execi 600 conkyForecast --location=FIXX0020 --datatype=HT}${font}
+
+${font sans-serif:bold:size=8}WEATHER ${hr 2}
+${font sans-serif:normal:size=8}Berlin: $alignr ${execi 300 weather.sh 10389}
+#{font sans-serif:normal:size=8}Nürnberg:  ${execi 300 weather.sh 10763}
