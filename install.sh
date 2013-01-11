@@ -1,61 +1,61 @@
 #!/bin/sh
 
 ########################
-SCRIPT=`readlink -f $0`
-SCRIPTPATH=`dirname $SCRIPT`
+script=`readlink -f $0`
+scriptpath=`dirname $SCRIPT`
 
-CONFIGPATH=$HOME/.config
+configpath=$HOME/.config
 ########################
-DOT_CONFIG=dot_config
-BIN_DIR=bin
-COMPTON_CONF=compton.conf
-OPENBOX_DIR=openbox
-OPENBOX_AUTOSTART=$OPENBOX_DIR/autostart
-OPENBOX_RC=$OPENBOX_DIR/rc.xml
-OPENBOX_MENU=$OPENBOX_DIR/menu.xml
-CONKY_CONF=conkyrc
-TERMINATOR_DIR=terminator
-TERMINATOR_CONF=$TERMINATOR_DIR/config
-TINT2_DIR=tint2
-TINT2_CONF=$TINT2_DIR/tint2rc
-GSIMPLECAL_DIR=gsimplecal
-GSIMPLECAL_CONF=$GSIMPLECAL_DIR/config
-AUTOSTART_DIR=autostart
-AUTOSTART_CAMMON_CONF=$AUTOSTART_DIR/cameramonitor.desktop
-AUTOSTART_DROPBOX_CONF=$AUTOSTART_DIR/dropbox.desktop
-XFCE_PERCHANNEL_DIR=xfce4/xfconf/xfce-perchannel-xml
-XFCE_POWER_MANAGER_CONF=$XFCE_PERCHANNEL_DIR/xfce4-power-manager.xml
-MEDIA_KEYS_SCRIPT=$BIN_DIR/media_keys_pipe
-WEATHER_SCRIPT=$BIN_DIR/weather.sh
+dot_config=dot_config
+bin_dir=bin
+compton_conf=compton.conf
+openbox_dir=openbox
+openbox_autostart=$openbox_dir/autostart
+openbox_rc=$openbox_dir/rc.xml
+openbox_menu=$openbox_dir/menu.xml
+conky_conf=conkyrc
+terminator_dir=terminator
+terminator_conf=$terminator_dir/config
+tint2_dir=tint2
+tint2_conf=$tint2_dir/tint2rc
+gsimplecal_dir=gsimplecal
+gsimplecal_conf=$gsimplecal_dir/config
+autostart_dir=autostart
+autostart_cammon_conf=$autostart_dir/cameramonitor.desktop
+autostart_dropbox_conf=$autostart_dir/dropbox.desktop
+xfce_perchannel_dir=xfce4/xfconf/xfce-perchannel-xml
+xfce_power_manager_conf=$xfce_perchannel_dir/xfce4-power-manager.xml
+MEDIA_KEYS_SCRIPT=$bin_dir/media_keys_pipe
+weather_script=$bin_dir/weather.sh
 
 ########################
-mkdir -p $HOME/$BIN_DIR
+mkdir -p $HOME/$bin_dir
 
-ln -sf $SCRIPTPATH/$MEDIA_KEYS_SCRIPT $HOME/$MEDIA_KEYS_SCRIPT
-ln -sf $SCRIPTPATH/$WEATHER_SCRIPT $HOME/$WEATHER_SCRIPT
+ln -sf $scriptpath/$media_keys_script $HOME/$media_keys_script
+ln -sf $scriptpath/$weather_script $HOME/$weather_script
 
-ln -sf $SCRIPTPATH/$DOT_CONFIG/$COMPTON_CONF $CONFIGPATH/$COMPTON_CONF
+ln -sf $scriptpath/$dot_config/$compton_conf $configpath/$compton_conf
 
-mkdir -p $CONFIGPATH/$OPENBOX_DIR
-ln -sf $SCRIPTPATH/$DOT_CONFIG/$OPENBOX_AUTOSTART $CONFIGPATH/$OPENBOX_AUTOSTART
-ln -sf $SCRIPTPATH/$DOT_CONFIG/$OPENBOX_RC $CONFIGPATH/$OPENBOX_RC
-ln -sf $SCRIPTPATH/$DOT_CONFIG/$OPENBOX_MENU $CONFIGPATH/$OPENBOX_MENU
+mkdir -p $configpath/$openbox_dir
+ln -sf $scriptpath/$dot_config/$openbox_autostart $configpath/$openbox_autostart
+ln -sf $scriptpath/$dot_config/$openbox_rc $configpath/$openbox_rc
+ln -sf $scriptpath/$dot_config/$openbox_menu $configpath/$openbox_menu
 
-ln -sf $SCRIPTPATH/$CONKY_CONF $HOME/.$CONKY_CONF
+ln -sf $scriptpath/$conky_conf $HOME/.$conky_conf
 
-mkdir -p $CONFIGPATH/$TERMINATOR_DIR
-ln -sf $SCRIPTPATH/$DOT_CONFIG/$TERMINATOR_CONF $CONFIGPATH/$TERMINATOR_CONF
+mkdir -p $configpath/$terminator_dir
+ln -sf $scriptpath/$dot_config/$terminator_conf $configpath/$terminator_conf
 
-mkdir -p $CONFIGPATH/$TINT2_DIR
-ln -sf $SCRIPTPATH/$DOT_CONFIG/$TINT2_CONF $CONFIGPATH/$TINT2_CONF
+mkdir -p $configpath/$tint2_dir
+ln -sf $scriptpath/$dot_config/$tint2_conf $configpath/$tint2_conf
 
-mkdir -p $CONFIGPATH/$GSIMPLECAL_DIR
-ln -sf $SCRIPTPATH/$DOT_CONFIG/$GSIMPLECAL_CONF $CONFIGPATH/$GSIMPLECAL_CONF
+mkdir -p $configpath/$gsimplecal_dir
+ln -sf $scriptpath/$dot_config/$gsimplecal_conf $configpath/$gsimplecal_conf
 
-mkdir -p $CONFIGPATH/$AUTOSTART_DIR
-ln -sf $SCRIPTPATH/$DOT_CONFIG/$AUTOSTART_CAMMON_CONF $CONFIGPATH/$AUTOSTART_CAMMON_CONF
-ln -sf $SCRIPTPATH/$DOT_CONFIG/$AUTOSTART_DROPBOX_CONF $CONFIGPATH/$AUTOSTART_DROPBOX_CONF
+mkdir -p $configpath/$autostart_dir
+ln -sf $scriptpath/$dot_config/$autostart_cammon_conf $configpath/$autostart_cammon_conf
+ln -sf $scriptpath/$dot_config/$autostart_dropbox_conf $configpath/$autostart_dropbox_conf
 
-mkdir -p $CONFIGPATH/$XFCE_PERCHANNEL_DIR
-ln -sf $SCRIPTPATH/$DOT_CONFIG/$XFCE_POWER_MANAGER_CONF $CONFIGPATH/$XFCE_POWER_MANAGER_CONF
+mkdir -p $configpath/$xfce_perchannel_dir
+ln -sf $scriptpath/$dot_config/$xfce_power_manager_conf $configpath/$xfce_power_manager_conf
 ########################
