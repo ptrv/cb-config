@@ -13,9 +13,9 @@
 ##
 ## If you do something cool with your autostart script and you think others
 ## could benefit from your hack, please consider sharing it at:
-## http://crunchbanglinux.org/forums/
+## http://crunchbang.org/forums/
 ##
-## Have fun! :)
+## Have fun & happy CrunchBangin'! :)
 
 ## GNOME PolicyKit and Keyring
 eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
@@ -27,13 +27,11 @@ hsetroot -solid "#2E3436" &
 ## 1. nitrogen - restores wallpaper
 ## 2. compositor - start
 ## 3. sleep - give compositor time to start
-## 4. conky
-## 5. tint2 panel
+## 4. tint2 panel
 (\
 nitrogen --restore && \
 cb-compositor --start && \
 sleep 2s && \
-conky -q && \
 tint2 \
 ) &
 
@@ -78,6 +76,9 @@ cb-cowpowers &
 
 ## cb-fortune - have Waldorf say a little adage
 (sleep 120s && cb-fortune) &
+
+## Run the conky
+conky -q &
 
 rfkill block bluetooth &
 synclient TouchpadOff=1 &
