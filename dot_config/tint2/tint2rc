@@ -11,7 +11,7 @@
 # ID 1
 rounded = 0
 border_width = 0
-background_color = #000000 20
+background_color = #000000 40
 border_color = #828282 0
 
 # ID 2 - task active
@@ -60,7 +60,7 @@ border_color = #888888 20
 panel_monitor = all
 panel_position = top center horizontal
 panel_size = 100% 28
-panel_items = TSBC
+panel_items = TSC
 panel_margin = 0 -1
 panel_padding = 0 0
 panel_dock = 0
@@ -117,7 +117,7 @@ font_shadow = 0
 launcher_padding = 8 4 4
 launcher_background_id = 0
 launcher_icon_size = 24
-# Specify icon theme names with launcher_icon_theme. 
+# Specify icon theme names with launcher_icon_theme.
 # if you have an XSETTINGS manager running (like xfsettingsd), tint2 will follow your current theme.
 launcher_icon_theme = gnome-colors-statler
 # Each launcher_item_app must be a full path to a .desktop file
