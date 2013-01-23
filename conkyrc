@@ -35,6 +35,7 @@ ${font sans-serif:normal:size=8}$sysname $kernel $alignr $machine
 Host:$alignr$nodename
 Uptime:$alignr$uptime
 File System: $alignr${fs_type}
+Battery: $alignr ${battery_percent BAT0}%
 
 ${font sans-serif:bold:size=8}PROCESSORS ${hr 2}
 ${font sans-serif:normal:size=8}${cpugraph cpu0}
