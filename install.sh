@@ -25,7 +25,7 @@ autostart_cammon_conf=$autostart_dir/cameramonitor.desktop
 autostart_dropbox_conf=$autostart_dir/dropbox.desktop
 xfce_perchannel_dir=xfce4/xfconf/xfce-perchannel-xml
 xfce_power_manager_conf=$xfce_perchannel_dir/xfce4-power-manager.xml
-MEDIA_KEYS_SCRIPT=$bin_dir/media_keys_pipe
+media_keys_script=$bin_dir/media_keys_pipe
 weather_script=$bin_dir/weather.sh
 
 ########################
