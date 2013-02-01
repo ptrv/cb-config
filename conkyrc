@@ -35,8 +35,8 @@ ${font sans-serif:normal:size=8}$sysname $kernel $alignr $machine
 Host:$alignr$nodename
 Uptime:$alignr$uptime
 File System: $alignr${fs_type}
-CPU temp: $alignr ${hwmon 1 temp 1}${iconv_start UTF-8 ISO_8859-1}°${iconv_stop}C
-FAN: $alignr ${hwmon 1 fan 1} RPM
+CPU temp: $alignr ${hwmon 2 temp 1}${iconv_start UTF-8 ISO_8859-1}°${iconv_stop}C
+FAN: $alignr ${hwmon 2 fan 1} RPM
 Battery: $alignr ${battery_percent BAT0}%
 
 ${font sans-serif:bold:size=8}PROCESSORS ${hr 2}
