@@ -57,7 +57,8 @@ fi
 xscreensaver -no-splash &
 
 ## Start Clipboard manager
-(sleep 3s && clipit) &
+#(sleep 3s && clipit) &
+(sleep 3s && copyq) &
 
 ## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
 ## Adjust the values according to your preferances.
