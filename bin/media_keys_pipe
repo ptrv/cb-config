@@ -1,6 +1,35 @@
 #!/bin/bash
 
-if pgrep $1 >/dev/null 2>&1
+if pgrep rhythmbox >/dev/null 2>&1
 then
-    $1 $2
+    case $1 in
+        playpause)
+            rhythmbox-client --play-pause
+            ;;
+        stop)
+            rhythmbox-client --pause
+            ;;
+        next)
+            rhythmbox-client --next
+            ;;
+        previous)
+            rhythmbox-client --previous
+            ;;
+    esac
+elif pgrep clementine >/dev/null 2>&1
+then
+    case $1 in
+        playpause)
+            clementine -t
+            ;;
+        stop)
+            clementine -s
+            ;;
+        next)
+            clementine -f
+            ;;
+        previous)
+            clementine -r
+            ;;
+    esac
 fi

@@ -477,22 +477,22 @@
     <!-- Media keys for clementine -->
     <keybind key="XF86AudioPlay">
       <action name="Execute">
-        <command>media_keys_pipe clementine -t</command>
+        <command>media_keys_pipe playpause</command>
       </action>
     </keybind>
     <keybind key="XF86AudioPrev">
       <action name="Execute">
-        <command>media_keys_pipe clementine -r</command>
+        <command>media_keys_pipe previous</command>
       </action>
     </keybind>
     <keybind key="XF86AudioNext">
       <action name="Execute">
-        <command>media_keys_pipe clementine -f</command>
+        <command>media_keys_pipe next</command>
       </action>
     </keybind>
     <keybind key="XF86AudioStop">
       <action name="Execute">
-        <command>media_keys_pipe clementine -s</command>
+        <command>media_keys_pipe stop</command>
       </action>
     </keybind>
   </keyboard>
