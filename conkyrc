@@ -78,4 +78,4 @@ ULS:${upspeed wlan0} kb/s $alignr total: ${totalup wlan0}
 
 ${font sans-serif:bold:size=8}WEATHER ${hr 2}
 ${font sans-serif:normal:size=8}Berlin: $alignr ${execi 300 weather.sh 10389}
-#{font sans-serif:normal:size=8}Nürnberg:  ${execi 300 weather.sh 10763}
+# ${font sans-serif:normal:size=8}N${iconv_start UTF-8 ISO_8859-1}ü${iconv_stop}rnberg: $alignr ${execi 300 weather.sh 10763}
