@@ -397,7 +397,7 @@
           <enabled>true</enabled>
           <name>Editor</name>
         </startupnotify>
-        <command>emacsclient -c</command>
+        <command>emacsclient -c --eval "(toggle-fullscreen)"</command>
       </action>
     </keybind>
     <keybind key="S-W-e">
@@ -406,7 +406,7 @@
           <enabled>true</enabled>
           <name>Editor</name>
         </startupnotify>
-        <command>emacs</command>
+        <command>emacs --eval "(toggle-fullscreen)"</command>
       </action>
     </keybind>
     <keybind key="W-m">
