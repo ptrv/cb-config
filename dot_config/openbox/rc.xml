@@ -355,6 +355,15 @@
         <command>thunar</command>
       </action>
     </keybind>
+    <keybind key="W-S-f">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>mucommander</name>
+        </startupnotify>
+        <command>mucommander</command>
+      </action>
+    </keybind>
     <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
